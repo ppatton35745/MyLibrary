@@ -38,7 +38,13 @@
             @Html.DisplayNameFor(model => model.Library)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Library.LibraryId)
+            @Html.DisplayFor(model => model.Library.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Patron)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Patron.FullName)
         </dd>
     </dl>
 </div>

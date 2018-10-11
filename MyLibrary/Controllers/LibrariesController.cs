@@ -34,6 +34,7 @@ namespace MyLibrary.Controllers
             }
 
             var library = await _context.Library
+                .Include(l => l.Books)
                 .FirstOrDefaultAsync(m => m.LibraryId == id);
             if (library == null)
             {

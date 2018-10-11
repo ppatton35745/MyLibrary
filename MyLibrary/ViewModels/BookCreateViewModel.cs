@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MyLibrary.ViewModels
 {
-    public class BookEditViewModel
+    public class BookCreateViewModel
     {
         public Book Book { get; set; }
 
@@ -16,7 +16,7 @@ namespace MyLibrary.ViewModels
 
         public List<SelectListItem> Patrons { get; set; }
 
-        public BookEditViewModel(ApplicationDbContext context)
+        public BookCreateViewModel(ApplicationDbContext context)
         {
             Libraries = context.Library.Select(library =>
             new SelectListItem { Text = library.Name, Value = library.LibraryId.ToString() }).ToList();

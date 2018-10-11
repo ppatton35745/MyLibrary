@@ -34,6 +34,15 @@
         <dd>
             @Html.DisplayFor(model => model.CloseHour)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Books)
+        </dt>
+        @foreach (var book in Model.Books)
+        {
+            <dd>
+                @Html.DisplayFor(item => book.Title)
+            </dd>
+        }
     </dl>
 </div>
 <div>

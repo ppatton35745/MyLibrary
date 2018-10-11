@@ -19,13 +19,7 @@
                 @Html.DisplayNameFor(model => model.Author)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ISBN)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.CheckedOut)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Library)
             </th>
             <th></th>
         </tr>
@@ -40,13 +34,7 @@
                 @Html.DisplayFor(modelItem => item.Author)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ISBN)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.CheckedOut)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Library.LibraryId)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.BookId">Edit</a> |
